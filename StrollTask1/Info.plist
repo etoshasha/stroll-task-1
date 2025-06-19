@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleGetInfoString</key>
+	<string></string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>ProximaNova_Semibold.otf</string>
+		<string>ProximaNova_Bold.otf</string>
+		<string>ProximaNova_Regular.ttf</string>
+		<string>ProximaNova_Condensed_Regular_Italic.otf</string>
+		<string>Inter_Regular.ttf</string>
+	</array>
+</dict>
+</plist>
