@@ -21,26 +21,38 @@ UI reference from dating app **Stroll**:
 
 ## The Output
 
-### iPhone 14 Pro Max
+<table>
+  <tr>
+    <td align="center">
+      <img src="iPhone14ProMax.PNG" width="350"><br>
+      <b>iPhone 14 Pro Max</b>
+    </td>
+    <td align="center">
+      <img src="iPhone13mini.png" width="350"><br>
+      <b>iPhone 13 mini</b>
+    </td>
+  </tr>
+</table>
 
-<img src="iPhone14ProMax.PNG" width="350">
+---
 
 ### Demo Video
 
 <img src="gif.gif" width="400">
 
-### iPhone 13 mini
-
-<img src="iPhone13mini.png" width="350">
-
 ---
 
 ## ⭐ Bonus: Dynamic Type Support
 
-### xxxLarge Text — iPhone 14 Pro Max
-
-<img src="iPhone14ProMax_xxxLarge.PNG" width="350">
-
-### xxxLarge Text — iPhone 13 mini
-
-<img src="iPhone13mini_xxxLarge.png" width="350">
+<table>
+  <tr>
+    <td align="center">
+      <img src="iPhone14ProMax_xxxLarge.PNG" width="350"><br>
+      <b>iPhone 14 Pro Max — xxxLarge Text</b>
+    </td>
+    <td align="center">
+      <img src="iPhone13mini_xxxLarge.png" width="350"><br>
+      <b>iPhone 13 mini — xxxLarge Text</b>
+    </td>
+  </tr>
+</table>
