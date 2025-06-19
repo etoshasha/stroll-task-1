@@ -15,7 +15,7 @@
 
 UI reference from dating app **Stroll**:
 
-![Original UI](reference.JPG)
+<img src="reference.JPG" width="350">
 
 ---
 
@@ -23,15 +23,15 @@ UI reference from dating app **Stroll**:
 
 ### iPhone 14 Pro Max
 
-![iPhone 14 Pro Max](iPhone14ProMax.PNG)
+<img src="iPhone14ProMax.PNG" width="350">
 
 ### Demo Video
 
-[![Demo Video](https://drive.google.com/file/d/120V74QFcnrUfuLIcBTz6WXTcBs3eetNH/view?usp=share_link)](https://drive.google.com/file/d/120V74QFcnrUfuLIcBTz6WXTcBs3eetNH/view?usp=share_link)
+<img src="gif.gif" width="400">
 
 ### iPhone 13 mini
 
-![iPhone 13 mini](iPhone13mini.png)
+<img src="iPhone13mini.png" width="350">
 
 ---
 
@@ -39,8 +39,8 @@ UI reference from dating app **Stroll**:
 
 ### xxxLarge Text — iPhone 14 Pro Max
 
-![iPhone 14 Pro Max xxxLarge](iPhone14ProMax_xxxLarge.PNG)
+<img src="iPhone14ProMax_xxxLarge.PNG" width="350">
 
 ### xxxLarge Text — iPhone 13 mini
 
-![iPhone 13 mini xxxLarge](iPhone13mini_xxxLarge.png)
+<img src="iPhone13mini_xxxLarge.png" width="350">
