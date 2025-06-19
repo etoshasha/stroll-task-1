@@ -1,4 +1,4 @@
-# Stroll — Task 1: Recreate UI
+# Hi! This is the result of the Task 1 for Stroll
 
 ---
 
