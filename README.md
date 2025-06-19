@@ -28,7 +28,7 @@ UI reference from dating app **Stroll**:
       <b>iPhone 14 Pro Max</b>
     </td>
     <td align="center">
-      <img src="iPhone13mini.png" width="350"><br>
+      <img src="iPhone13mini.png" width="280"><br>
       <b>iPhone 13 mini</b>
     </td>
   </tr>
@@ -51,7 +51,7 @@ UI reference from dating app **Stroll**:
       <b>iPhone 14 Pro Max — xxxLarge Text</b>
     </td>
     <td align="center">
-      <img src="iPhone13mini_xxxLarge.png" width="350"><br>
+      <img src="iPhone13mini_xxxLarge.png" width="280"><br>
       <b>iPhone 13 mini — xxxLarge Text</b>
     </td>
   </tr>
