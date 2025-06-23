@@ -5,14 +5,14 @@ struct ChatsHeaderView: View {
   var body: some View {
     VStack(alignment: .leading, spacing: 10) {
       HStack(alignment: .firstTextBaseline, spacing: 15) {
-        VStack(alignment: .leading, spacing: 5) {
+        VStack(alignment: .leading, spacing: 1) {
           Text("Chats")
             .font(.proximaNova(size: 22, weight: .bold))
             .foregroundStyle(.title)
 
           Rectangle()
             .fill(.white)
-            .frame(width: 50, height: 1)
+            .frame(width: 53, height: 1)
         }
         Text("Pending")
           .font(.proximaNova(size: 22, weight: .bold))
@@ -22,8 +22,8 @@ struct ChatsHeaderView: View {
       Text("The ice is broken. Time to hit it off")
         .font(.proximaNova(size: 12, weight: .italic))
         .foregroundStyle(.secondaryTitle)
-
     }
+    .padding(.leading, 3)
   }
 }
 

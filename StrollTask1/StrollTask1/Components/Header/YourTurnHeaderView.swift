@@ -5,7 +5,7 @@ struct YourTurnHeaderView: View {
   var body: some View {
     HStack {
       VStack(alignment: .leading, spacing: 6) {
-        HStack(spacing: 10) {
+        HStack(spacing: 10.5) {
           Text("Your Turn")
             .font(.proximaNova(size: 22, weight: .bold))
             .foregroundStyle(.title)
@@ -23,7 +23,7 @@ struct YourTurnHeaderView: View {
       }
       Spacer()
       CurrentMatchView()
-        .offset(y: -5)
+        .offset(x: 1, y: -8.5)
     }
   }
 }

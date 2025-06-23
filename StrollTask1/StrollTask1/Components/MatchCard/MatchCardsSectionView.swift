@@ -18,8 +18,6 @@ struct MatchCardsSectionView: View {
         CollapsedCardsView()
         Rectangle().fill(.clear).frame(width: 2) // default clear space after last card
       }
-      .padding(.top, 20)
-      .padding(.bottom, 29)
     }
   }
 }

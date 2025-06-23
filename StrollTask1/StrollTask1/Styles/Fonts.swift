@@ -49,7 +49,7 @@ enum AppFonts {
     static let regular  = "ProximaNova-Regular"
     static let semibold = "ProximaNova-Semibold"
     static let bold     = "ProximaNova-Bold"
-    static let italic   = "ProximaNovaCond-RegularIt"
+    static let italic   = "ProximaNova-RegularIt"
   }
 
   enum Inter {

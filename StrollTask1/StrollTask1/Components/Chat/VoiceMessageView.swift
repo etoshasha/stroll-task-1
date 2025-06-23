@@ -5,6 +5,7 @@ struct VoiceMessageView: View {
   var body: some View {
     HStack(spacing: 11) {
       Image(.microphone)
+        .offset(x: -1)
         .foregroundStyle(
           LinearGradient(
             gradient: Gradient(stops: [
@@ -35,6 +36,7 @@ struct VoiceMessageView: View {
       Text("00:58")
         .font(.proximaNova(size: 14, weight: .bold))
         .foregroundStyle(.voiceGradientTop)
+        .offset(y: 1)
     }
   }
 }

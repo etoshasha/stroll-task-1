@@ -17,13 +17,13 @@ struct MatchCardConfig: Identifiable {
 
     static let all: [MatchCardConfig] = [
         .init(
-          image: .amandaBlur,
+          image: .amanda,
           nameAndAge: "Amanda, 22",
           question: "What is your most favorite childhood memory?",
           style: .normal
         ),
         .init(
-          image: .malteBlur,
+          image: .malte,
           nameAndAge: "Malte, 31",
           question: "What is the most important quality in friendships to you?",
           style: .withTagline

@@ -21,21 +21,19 @@ struct CustomTabBar: View {
       )
       .frame(height: 40)
 
-      Color(.tabbarStroke)    // thin separator
-        .frame(height: 1)
-
       ZStack {
         Rectangle()           // bar fill
           .fill(.tabbarFill)
           .frame(height: tabBarHeight)
 
-        HStack {
+        HStack(spacing: 64.33) {
           TabsView(hasNotifyBadge: true, icon: .pokerCards, tabName: "Cards")
           TabsView(icon: .bonfire, tabName: "Bonfire")
           TabsView(isActive: true, icon: .matches, tabName: "Matches")
           TabsView(isProfileTab: true, icon: .marie, tabName: "Profile")
         }
-        .padding(.bottom, 20)
+        .padding(.horizontal, 15)
+        .padding(.bottom, 23)
       }
     }
     .ignoresSafeArea(edges: .bottom)

@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
-  private let tabBarHeight: CGFloat = 100
+  private let tabBarHeight: CGFloat = 98
 
   var body: some View {
     ZStack(alignment: .bottom) {
@@ -11,19 +11,20 @@ struct ContentView: View {
         VStack(spacing: 0) {
           YourTurnHeaderView()    // top header
             .padding(.horizontal, 17)
-            .padding(.top, 30)
+            .padding(.top, 33.5)
 
           MatchCardsSectionView() // horizontal scrollview cards
+            .padding(.top, 20)
             .padding(.bottom, 29)
 
           ChatsHeaderView()       // “Chats” + underline
             .padding(.horizontal, 17)
+            .padding(.bottom, 10)
 
           ChatListView()          // list of ChatCellView
-            .padding(.top, 10)
             .padding(.horizontal, 17)
         }
-        // add bottom inset so content scrolls above the tab bar
+        // bottom inset so content scrolls above the tab bar
         .padding(.bottom, tabBarHeight)
       }
 

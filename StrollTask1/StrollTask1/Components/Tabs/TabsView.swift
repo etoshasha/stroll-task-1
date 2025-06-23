@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct TabsView: View {
-  let tabHeight: CGFloat = 45
-  let tabWidth: CGFloat = 50
+  let tabHeight: CGFloat = 46
+  let tabWidth: CGFloat = 38
   var hasNotifyBadge = false
   let badgeHPadding: CGFloat = 4
   let badgeVPadding: CGFloat = 2
@@ -21,14 +21,18 @@ struct TabsView: View {
         ZStack {
           Image(.profileStroke)
             .resizable()
-          Image(icon)
+            .opacity(0.75)
+            .blendMode(.luminosity)
+          Image(.marie)
             .resizable()
             .frame(width: 19.2, height: 19.2)
             .clipShape(.circle)
         }
         .frame(width: 24, height: 24)
+        .offset(y: -1)
       } else {
         Image(icon)
+          .offset(y: icon == .matches ? 0 : -1)
           .overlay(content: {
             if hasNotifyBadge {
               // notification badge
@@ -39,7 +43,7 @@ struct TabsView: View {
                 notificationValue: badgeValue,
                 hasStrokeBorder: true
               )
-              .offset(x: 10, y: -8)
+              .offset(x: 9, y: -8)
             }
           }
           )
@@ -48,8 +52,9 @@ struct TabsView: View {
       Text(tabName)
         .font(.proximaNova(size: 10, weight: .semibold))
         .foregroundStyle(isActive ? .accent : .secondaryText)
+        .offset(x: isProfileTab ? 1 : 0 , y: isProfileTab || icon == .matches ? -1 : 0)
     }
-    .frame(maxWidth: .infinity, maxHeight: tabHeight)
+    .frame(width: tabWidth, height: tabHeight)
   }
 }
 

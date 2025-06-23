@@ -8,33 +8,47 @@ struct MatchCardView: View {
   var hasPhoto: Bool = false
 
   private let cardSize = CGSize(width: 145, height: 205)
+  private let cornerRadius: CGFloat = 20
 
   var body: some View {
-    ZStack {
-      // background
+    ZStack(alignment: .bottom) {
+      // background photo
       Image(image)
         .resizable()
         .scaledToFill()
         .frame(width: cardSize.width, height: cardSize.height)
-        .clipped()
-
-      // fade‐out gradient when hasPhoto
-      if hasPhoto {
-        LinearGradient(
-          gradient: Gradient(stops: [
-            .init(color: .background.opacity(0), location: 0),
-            .init(color: .background, location: 0.5),
-            .init(color: .background, location: 1),
-          ]),
-          startPoint: .top,
-          endPoint: .bottom
+        .blur(radius: hasPhoto ? 0 : 50, opaque: true)
+        .compositingGroup()
+        .overlay(
+          Color.white.opacity(hasPhoto ? 0 : 0.01)
         )
-        .frame(height: 145)
-        .frame(maxHeight: .infinity, alignment: .bottom)
-      }
+        .contrast(hasPhoto || image != .amanda ? 1 : 1.8)
+        .brightness(hasPhoto || image != .amanda ? 0 : 0.05)
+        .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
+
+      // gradient overlay
+      LinearGradient(
+        gradient: Gradient(stops: [
+          .init(color: .background.opacity(0), location: 0),
+          .init(color: .background.opacity(0.8), location: 0.5),
+          .init(color: .background, location: 0.7),
+          .init(color: .background, location: 1),
+        ]),
+        startPoint: .top,
+        endPoint: .bottom
+      )
+      .frame(width: cardSize.width, height: 160)
+      .opacity(0.98)
+
+      // fix for 'leaking' background in the bottom corners
+      RoundedRectangle(cornerRadius: cornerRadius)
+        .strokeBorder(Color.background, lineWidth: 1.5)
+        .padding(-0.5)
     }
+    .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
     .frame(width: cardSize.width, height: cardSize.height)
-    .clipShape(RoundedRectangle(cornerRadius: 20))
+    .shadow(color: Color.black.opacity(0.25),
+            radius: 4, x: 2, y: 4)
 
     // top‐center text badge
     .overlay(
@@ -45,9 +59,16 @@ struct MatchCardView: View {
             .minimumScaleFactor(0.7)  // for dynamic type to fit in
             .foregroundStyle(.matchBadgeText)
             .padding(.horizontal, 10)
-            .padding(.vertical, 4)
-            .background(.matchTagFill)
-            .clipShape(Capsule())
+            .padding(.vertical, 4.5)
+            .background(
+              Capsule()
+                .fill(Color.matchTagFill)
+                .shadow(
+                  color: Color(white: 0.5).opacity(0.6), // roughly #808080 @ 60%
+                  radius: 15.3,
+                  x: 0, y: 0
+                )
+            )
             .padding(.top, 11)
         }
       },
@@ -89,7 +110,7 @@ struct MatchCardView: View {
     )
     // name & question pinned to bottom with 12 pts
     .overlay(
-      VStack(spacing: 5) {
+      VStack(spacing: 4) {
         Text(nameAndAge)
           .font(.proximaNova(size: 15, weight: .bold))
           .foregroundStyle(.white)
@@ -100,14 +121,19 @@ struct MatchCardView: View {
           .multilineTextAlignment(.center)
           .padding(.horizontal, 15)
       }
-        .padding(.bottom, 12),
+        .padding(.bottom, 11),
       alignment: .bottom
     )
   }
 }
 
 #Preview {
-  MatchCardView(image: .amandaBlur, nameAndAge: "Amanda, 22", question: "What is your most favorite childhood memory?", hasTagline: true)
+  MatchCardView(image: .amanda, nameAndAge: "Amanda, 22", question: "What is your most favorite childhood memory?", hasTagline: true)
+
+  MatchCardView(image: .malte,
+                nameAndAge: "Malte, 31",
+                question: "What is the most important quality in friendships to you?",
+                hasTagline: true)
 
   MatchCardView(image: .binghan, nameAndAge: "Binghan, 28", question: "What is your most favorite movie childhood memory?", hasPhoto: true)
 }

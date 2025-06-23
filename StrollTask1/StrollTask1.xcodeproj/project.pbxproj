@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090A7C502E08691300C91CE6 /* ProximaNova_Regular_Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 090A7C4F2E08691200C91CE6 /* ProximaNova_Regular_Italic.otf */; };
 		09401A102E04303700081F93 /* ProximaNova_Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 09401A0F2E04303700081F93 /* ProximaNova_Semibold.otf */; };
 		09401A132E04312F00081F93 /* ProximaNova_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 09401A122E04312F00081F93 /* ProximaNova_Bold.otf */; };
 		09401A152E04313600081F93 /* ProximaNova_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09401A142E04313600081F93 /* ProximaNova_Regular.ttf */; };
-		09401A192E04335D00081F93 /* ProximaNova_Condensed_Regular_Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 09401A182E04335D00081F93 /* ProximaNova_Condensed_Regular_Italic.otf */; };
 		09401A232E04449E00081F93 /* YourTurnHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09401A222E04449E00081F93 /* YourTurnHeaderView.swift */; };
 		09401A282E04454A00081F93 /* MatchCardsSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09401A272E04454A00081F93 /* MatchCardsSectionView.swift */; };
 		09401A2A2E04456B00081F93 /* MatchCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09401A292E04456B00081F93 /* MatchCardView.swift */; };
@@ -38,10 +38,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		090A7C4F2E08691200C91CE6 /* ProximaNova_Regular_Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNova_Regular_Italic.otf; sourceTree = "<group>"; };
 		09401A0F2E04303700081F93 /* ProximaNova_Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNova_Semibold.otf; sourceTree = "<group>"; };
 		09401A122E04312F00081F93 /* ProximaNova_Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNova_Bold.otf; sourceTree = "<group>"; };
 		09401A142E04313600081F93 /* ProximaNova_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNova_Regular.ttf; sourceTree = "<group>"; };
-		09401A182E04335D00081F93 /* ProximaNova_Condensed_Regular_Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNova_Condensed_Regular_Italic.otf; sourceTree = "<group>"; };
 		09401A222E04449E00081F93 /* YourTurnHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourTurnHeaderView.swift; sourceTree = "<group>"; };
 		09401A272E04454A00081F93 /* MatchCardsSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCardsSectionView.swift; sourceTree = "<group>"; };
 		09401A292E04456B00081F93 /* MatchCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCardView.swift; sourceTree = "<group>"; };
@@ -124,12 +124,12 @@
 		09401A1E2E04409100081F93 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				09401A332E0449A000081F93 /* ChatsHeaderView.swift */,
+				09401A352E044A1100081F93 /* ChatListView.swift */,
+				0994EDA52E040572000E4EE6 /* ChatCell.swift */,
 				09401A2D2E04473500081F93 /* HStackWidthPreferenceKey.swift */,
 				09401A2F2E04477C00081F93 /* ChatTagView.swift */,
 				09401A312E0447C500081F93 /* VoiceMessageView.swift */,
-				0994EDA52E040572000E4EE6 /* ChatCell.swift */,
-				09401A332E0449A000081F93 /* ChatsHeaderView.swift */,
-				09401A352E044A1100081F93 /* ChatListView.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -186,9 +186,9 @@
 			children = (
 				09401A0F2E04303700081F93 /* ProximaNova_Semibold.otf */,
 				09401A392E04576400081F93 /* Inter_Regular.ttf */,
+				090A7C4F2E08691200C91CE6 /* ProximaNova_Regular_Italic.otf */,
 				09401A122E04312F00081F93 /* ProximaNova_Bold.otf */,
 				09401A142E04313600081F93 /* ProximaNova_Regular.ttf */,
-				09401A182E04335D00081F93 /* ProximaNova_Condensed_Regular_Italic.otf */,
 			);
 			path = CustomFontsFiles;
 			sourceTree = "<group>";
@@ -268,9 +268,9 @@
 				09401A152E04313600081F93 /* ProximaNova_Regular.ttf in Resources */,
 				09401A102E04303700081F93 /* ProximaNova_Semibold.otf in Resources */,
 				095B669F2E031D2600A6F435 /* Assets.xcassets in Resources */,
-				09401A192E04335D00081F93 /* ProximaNova_Condensed_Regular_Italic.otf in Resources */,
 				09401A132E04312F00081F93 /* ProximaNova_Bold.otf in Resources */,
 				09401A3A2E04576400081F93 /* Inter_Regular.ttf in Resources */,
+				090A7C502E08691300C91CE6 /* ProximaNova_Regular_Italic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
